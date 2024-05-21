@@ -79,7 +79,7 @@ const Navbar = () => {
       </div>
 
       <div className="md:hidden">
-        <button onClick={toggleNavbar}>
+        <button type="button" aria-label="abrirMenu" onClick={toggleNavbar}>
           {isOpen ? (
             <div className="border border-zinc-500 p-2 px-4 rounded-md">
               <FaX className="text-2xl" />

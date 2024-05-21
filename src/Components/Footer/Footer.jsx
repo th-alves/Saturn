@@ -35,10 +35,14 @@ const Footer = () => {
 
         <div>
           <div className="flex justify-center gap-2">
-            <a href="https://www.instagram.com/saturnsonline/" target="_blank">
+            <a
+              href="https://www.instagram.com/saturnsonline/"
+              target="_blank"
+              aria-label="Instagram da loja Saturn"
+            >
               <FaInstagram className="text-lg hover:text-sky-500 transition duration-500" />
             </a>
-            <a href="">
+            <a href="#" aria-label="Twitter da loja Saturn">
               <FaTwitter className="text-lg hover:text-sky-500 transition duration-500" />
             </a>
           </div>

@@ -13,6 +13,7 @@ function Header() {
           as="gif"
           src={SaturnGif}
           className="w-full h-40 md:h-72 object-cover"
+          alt="Banner mostrando um video de pessoas usando as peças saturn"
         />
       </div>
     </header>
