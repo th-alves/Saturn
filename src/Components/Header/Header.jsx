@@ -7,7 +7,13 @@ function Header() {
     <header>
       <Navbar />
       <div className="w-full md:w-screen">
-        <img src={SaturnGif} className="w-full h-40 md:h-72 object-cover" />
+        <img
+          rel="preload"
+          fetchpriority="high"
+          as="gif"
+          src={SaturnGif}
+          className="w-full h-40 md:h-72 object-cover"
+        />
       </div>
     </header>
   );
