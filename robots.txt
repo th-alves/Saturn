@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Allow: /Main/
+Allow: /Footer/
+
+Disallow: 
