@@ -4,7 +4,7 @@ const Card = ({ productImg, hoveredImg, productName, price }) => {
   const [hovered, setHovered] = useState(false);
 
   return (
-    <div className="flex flex-col items-center border border-zinc-200 rounded-md p-4 shadow-lg w-[85%] mx-auto md:mx-0 bg-white">
+    <div className="flex flex-col items-center border border-zinc-200 rounded-md p-4 w-[85%] shadow-lg mx-auto bg-white">
       {hovered ? (
         <div
           onMouseEnter={() => setHovered(true)}
