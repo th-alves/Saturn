@@ -8,6 +8,9 @@ export default {
         background: "#F4FBFE",
         backgroundFooter: "#031723",
       },
+      fontFamily: {
+        inter: "Inter, sans-serif",
+      }
     },
   },
   plugins: [],

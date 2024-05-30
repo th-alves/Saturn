@@ -26,7 +26,7 @@ const LoginPage = () => {
         </button>
       </div>
 
-      <div className="w-full max-w-md mx-auto">
+      <div className="w-screen md:w-full max-w-md mx-auto">
         {tab === "login" && (
           <form className="bg-white shadow-md px-8 pt-6 pb-8 mb-4">
             <div>
@@ -102,7 +102,7 @@ const LoginPage = () => {
                 className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                 id="name"
                 type="text"
-                placeholder="John Doe"
+                placeholder="Seu nome"
               />
             </div>
             <div className="mb-4">

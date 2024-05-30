@@ -1,6 +1,6 @@
 import Card from "./Card/Card";
-import FirstClothe from "./assets/roupas/camisetas/st-1.jpg";
-import SecondClothe from "./assets/roupas/camisetas/st-2.jpg";
+import FirstClothe from "./assets/roupas/camisetas/st-1.webp";
+import SecondClothe from "./assets/roupas/camisetas/st-2.webp";
 
 const Main = () => {
   return (
