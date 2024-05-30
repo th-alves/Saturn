@@ -21,7 +21,7 @@ const Modal = ({ isModalOpen, setModalOpen }) => {
           </div>
           <button
             onClick={setModalOpen}
-            className="absolute top-0 right-0 bg-white px-3 text-xl"
+            className="absolute top-0 right-0 bg-white px-3 text-xl rounded-sm"
           >
             X
           </button>
