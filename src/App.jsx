@@ -21,25 +21,25 @@ function App() {
       {/* Bubbles */}
       <div className="bolhas-container">
         <div className="bolha">
-          <img src={BubbleTwo} alt="icon float" className="w-7" />
+          <img src={BubbleTwo} alt="icon float" className="w-7 h-7" />
         </div>
         <div className="bolha">
-          <img src={BubbleOne} alt="" className="w-7" />
+          <img src={BubbleOne} alt="" className="w-7 h-7" />
         </div>
         <div className="bolha">
-          <img src={BubbleTwo} alt="icon float" className="w-7" />
+          <img src={BubbleTwo} alt="icon float" className="w-7 h-7" />
         </div>
         <div className="bolha">
-          <img src={BubbleOne} alt="" className="w-7" />
+          <img src={BubbleOne} alt="" className="w-7 h-7" />
         </div>
         <div className="bolha">
-          <img src={BubbleTwo} alt="icon float" className="w-7" />
+          <img src={BubbleTwo} alt="icon float" className="w-7 h-7" />
         </div>
         <div className="bolha">
-          <img src={BubbleOne} alt="" className="w-7" />
+          <img src={BubbleOne} alt="" className="w-7 h-7" />
         </div>
         <div className="bolha">
-          <img src={BubbleTwo} alt="icon float" className="w-7" />
+          <img src={BubbleTwo} alt="icon float" className="w-7 h-7" />
         </div>
       </div>
 
