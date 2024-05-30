@@ -28,7 +28,7 @@ const LoginPage = () => {
 
       <div className="w-full max-w-md mx-auto">
         {tab === "login" && (
-          <form className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+          <form className="bg-white shadow-md px-8 pt-6 pb-8 mb-4">
             <div>
               <p className="text-xs italic mb-5">
                 Digite seu email e senha para acessar sua conta.
@@ -87,7 +87,7 @@ const LoginPage = () => {
         )}
 
         {tab === "register" && (
-          <form className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+          <form className="bg-white shadow-md px-8 pt-6 pb-8 mb-4">
             <p className="text-xs italic mb-4">
                 Preencha o formulário abaixo para registrar uma nova conta.
               </p>
