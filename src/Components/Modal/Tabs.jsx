@@ -2,7 +2,6 @@ import { useState } from "react";
 
 const LoginPage = () => {
   const [tab, setTab] = useState("login");
-
   return (
     <div>
       <div className="tabs flex mb-4">

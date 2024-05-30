@@ -40,13 +40,13 @@ const Footer = () => {
               target="_blank"
               aria-label="Instagram da loja Saturn"
             >
-              <FaInstagram className="text-lg hover:text-sky-500 transition duration-500" />
+              <FaInstagram className="text-lg hover:text-sky-500 transition duration-500 m-2" />
             </a>
             <a href="#" aria-label="Twitter da loja Saturn">
-              <FaTwitter className="text-lg hover:text-sky-500 transition duration-500" />
+              <FaTwitter className="text-lg hover:text-sky-500 transition duration-500 m-2" />
             </a>
           </div>
-          <p>
+          <p className="m-2">
             By{" "}
             <a
               href="https://www.instagram.com/th_ntc"
