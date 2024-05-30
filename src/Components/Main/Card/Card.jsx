@@ -11,6 +11,9 @@ const Card = ({ productImg, hoveredImg, productName, price }) => {
           onMouseLeave={() => setHovered(false)}
         >
           <img
+            rel="preload"
+            fetchPriority="high"
+            as="image"
             src={hoveredImg}
             alt="t-shirt 2"
             className=" md:w-72 transition-all duration-300"
@@ -22,6 +25,9 @@ const Card = ({ productImg, hoveredImg, productName, price }) => {
           onMouseLeave={() => setHovered(false)}
         >
           <img
+            rel="preload"
+            fetchPriority="high"
+            as="image"
             src={productImg}
             alt="t-shirt 1"
             className="w-96 md:w-80 transition-all duration-300"

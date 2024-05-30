@@ -4,8 +4,8 @@ import Inicio from "./Pages/Inicio/Inicio";
 import Sobre from "./Pages/Sobre/Sobre";
 import Footer from "./Components/Footer/Footer";
 
-import BubbleOne from "./Components/assets/saturn-rxx-removebg.png";
-import BubbleTwo from "./Components/assets/saturn-favicon.ico";
+import BubbleOne from "./Components/assets/saturn-rxx-removebg.webp";
+import BubbleTwo from "./Components/assets/saturn-favicon.ico.webp";
 
 function App() {
   return (

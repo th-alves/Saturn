@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import DropdownMenu from "./DropdownMenu";
 import { FaAngleDown, FaCartFlatbed, FaBars, FaX } from "react-icons/fa6";
-import SaturnLogo from "../../assets/SATURN_PHARM_rx.png";
+import SaturnLogo from "../../assets/SATURN_PHARM_rx.webp";
 import { motion } from "framer-motion";
 import Modal from "../../Modal/Modal";
 

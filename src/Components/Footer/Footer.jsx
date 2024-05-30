@@ -1,5 +1,5 @@
 import React from "react";
-import SaturnLogo from "../../Components/assets/SATURN_PHARM_rx.png";
+import SaturnLogo from "../../Components/assets/SATURN_PHARM_rx.webp";
 import InputFooter from "./InputFooter/InputFooter";
 import { FaInstagram, FaTwitter } from "react-icons/fa6";
 
