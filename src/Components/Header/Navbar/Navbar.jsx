@@ -1,10 +1,12 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
-import DropdownMenu from "./DropdownMenu";
 import { FaAngleDown, FaCartFlatbed, FaBars, FaX } from "react-icons/fa6";
-import SaturnLogo from "../../assets/SATURN_PHARM_rx.webp";
-import { motion } from "framer-motion";
+import { Fade } from "react-awesome-reveal";
+import "animate.css";
+
+import DropdownMenu from "./DropdownMenu";
 import Modal from "../../Modal/Modal";
+import SaturnLogo from "../../assets/SATURN_PHARM_rx.webp";
 
 const Navbar = () => {
   const [openDropdown, setOpenDropdown] = useState(false);
@@ -15,22 +17,6 @@ const Navbar = () => {
 
   const toggleNavbar = () => {
     setIsOpen(!isOpen);
-  };
-
-  const menuVars = {
-    initial: {
-      scaleY: 0,
-    },
-    animate: {
-      scaleY: 1,
-      transition: {
-        duration: 0.4,
-        ease: [0.12, 0, 0.39, 0],
-      },
-    },
-    exit: {
-      scaleY: 0,
-    },
   };
 
   return (
@@ -94,50 +80,46 @@ const Navbar = () => {
 
       {/* Menu Mobile */}
       {isOpen && (
-        <motion.ul
-          variants={menuVars}
-          initial="initial"
-          animate="animate"
-          exit="exit"
-          className="flex basis-full flex-col items-center origin-top"
-        >
-          <li className="mt-4">
-            <NavLink to="/">Início</NavLink>
-          </li>
-          <li className="mt-4">
-            <NavLink to="/sobre">Sobre nós</NavLink>
-          </li>
-          <li
-            className="flex flex-col items-center gap-2 mt-4"
-            onClick={() => setOpenDropdown((prev) => !prev)}
-          >
-            <p className="flex items-center gap-1">
-              Comprar <FaAngleDown />
-            </p>
-            {openDropdown && <DropdownMenu />}
-          </li>
-          {/* Nav Buttons */}
-          <div className="flex flex-col items-center gap-2 mt-4">
-            <button
-              onClick={() => setOpenModal(true)}
-              className="border border-black p-2 px-5 rounded-lg font-bold hover:bg-sky-700 hover:text-white transition duration-300"
+        <ul className="flex basis-full flex-col items-center origin-top ">
+          <Fade cascade damping={0.1}>
+            <li className="mt-4">
+              <NavLink to="/">Início</NavLink>
+            </li>
+            <li className="mt-4">
+              <NavLink to="/sobre">Sobre nós</NavLink>
+            </li>
+            <li
+              className="flex flex-col items-center gap-2 mt-4"
+              onClick={() => setOpenDropdown((prev) => !prev)}
             >
-              Login
-            </button>
-            {/* Modal */}
-            <Modal
-              isModalOpen={openModal}
-              setModalOpen={() => setOpenModal(!openModal)}
-            />
-            <a
-              href="#"
-              className="flex items-center gap-2 bg-sky-700 border border-sky-700  text-white p-2 px-5 rounded-lg hover:bg-sky-900 transition duration-300"
-            >
-              <FaCartFlatbed /> Carrinho
-              <span className="bg-black px-2 rounded-full">0</span>
-            </a>
-          </div>
-        </motion.ul>
+              <p className="flex items-center gap-1">
+                Comprar <FaAngleDown />
+              </p>
+              {openDropdown && <DropdownMenu />}
+            </li>
+            {/* Nav Buttons */}
+            <div className="flex flex-col items-center gap-2 mt-4">
+              <button
+                onClick={() => setOpenModal(true)}
+                className="border border-black p-2 px-5 rounded-lg font-bold hover:bg-sky-700 hover:text-white transition duration-300"
+              >
+                Login
+              </button>
+              {/* Modal */}
+              <Modal
+                isModalOpen={openModal}
+                setModalOpen={() => setOpenModal(!openModal)}
+              />
+              <a
+                href="#"
+                className="flex items-center gap-2 bg-sky-700 border border-sky-700  text-white p-2 px-5 rounded-lg hover:bg-sky-900 transition duration-300"
+              >
+                <FaCartFlatbed /> Carrinho
+                <span className="bg-black px-2 rounded-full">0</span>
+              </a>
+            </div>
+          </Fade>
+        </ul>
       )}
     </nav>
   );
