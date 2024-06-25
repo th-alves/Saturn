@@ -1,7 +1,6 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { Outlet } from "react-router-dom";
+// Páginas
 import Header from "./Components/Header/Header";
-import Inicio from "./Pages/Inicio/Inicio";
-import Sobre from "./Pages/Sobre/Sobre";
 import Footer from "./Components/Footer/Footer";
 
 import BubbleOne from "./Components/assets/saturn-rxx-removebg.webp";
@@ -10,14 +9,8 @@ import BubbleTwo from "./Components/assets/saturn-favicon.ico.webp";
 function App() {
   return (
     <>
-      <BrowserRouter>
-        <Header />
-        <Routes>
-          <Route path="/" element={<Inicio />} />
-          <Route path="/sobre" element={<Sobre />} />
-        </Routes>
-      </BrowserRouter>
-
+      <Header />
+      <Outlet />
       {/* Bubbles */}
       <div className="bolhas-container">
         <div className="bolha">

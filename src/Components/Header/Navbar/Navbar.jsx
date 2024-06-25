@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { FaAngleDown, FaCartFlatbed, FaBars, FaX } from "react-icons/fa6";
 import { Fade } from "react-awesome-reveal";
 import "animate.css";
@@ -24,10 +24,10 @@ const Navbar = () => {
       {/* Links */}
       <ul className="hidden md:flex gap-5">
         <li>
-          <NavLink to="/">Início</NavLink>
+          <Link to={"/"}>Início</Link>
         </li>
         <li>
-          <NavLink to="/sobre">Sobre nós</NavLink>
+          <Link to={"/sobre"}>Sobre nós</Link>
         </li>
         <li
           className="flex items-center gap-2 cursor-pointer"
@@ -39,7 +39,9 @@ const Navbar = () => {
       </ul>
 
       {/* Logo */}
-      <img src={SaturnLogo} alt="Saturn logo" className="w-24" />
+      <Link to={"/"}>
+        <img src={SaturnLogo} alt="Saturn logo" className="w-24" />
+      </Link>
 
       {/* Botões de Login e Carrinho */}
       <div className="hidden md:flex items-center gap-5">
@@ -55,13 +57,13 @@ const Navbar = () => {
           isModalOpen={openModal}
           setModalOpen={() => setOpenModal(!openModal)}
         />
-        <a
+        <Link
           href="#"
           className="flex items-center gap-2 bg-sky-700 border border-sky-700  text-white p-2 px-5 rounded-lg hover:bg-sky-900 transition duration-300"
         >
           <FaCartFlatbed /> Carrinho
           <span className="bg-black px-2 rounded-full">0</span>
-        </a>
+        </Link>
       </div>
 
       <div className="md:hidden">
@@ -83,10 +85,10 @@ const Navbar = () => {
         <ul className="flex basis-full flex-col items-center origin-top ">
           <Fade cascade damping={0.1}>
             <li className="mt-4">
-              <NavLink to="/">Início</NavLink>
+              <Link to={"/"}>Início</Link>
             </li>
             <li className="mt-4">
-              <NavLink to="/sobre">Sobre nós</NavLink>
+              <Link to={"/sobre"}>Sobre nós</Link>
             </li>
             <li
               className="flex flex-col items-center gap-2 mt-4"
@@ -110,13 +112,13 @@ const Navbar = () => {
                 isModalOpen={openModal}
                 setModalOpen={() => setOpenModal(!openModal)}
               />
-              <a
+              <Link
                 href="#"
                 className="flex items-center gap-2 bg-sky-700 border border-sky-700  text-white p-2 px-5 rounded-lg hover:bg-sky-900 transition duration-300"
               >
                 <FaCartFlatbed /> Carrinho
                 <span className="bg-black px-2 rounded-full">0</span>
-              </a>
+              </Link>
             </div>
           </Fade>
         </ul>

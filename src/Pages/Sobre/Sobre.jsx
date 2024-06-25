@@ -1,7 +1,11 @@
 import React from "react";
 
 const Sobre = () => {
-  return <div>Vendemos drogas, lean e odiamos a puliça</div>;
+  return (
+    <div>
+      <h1>Sobre</h1>
+    </div>
+  );
 };
 
 export default Sobre;

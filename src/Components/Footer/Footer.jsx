@@ -2,6 +2,7 @@ import React from "react";
 import SaturnLogo from "../../Components/assets/SATURN_PHARM_rx.webp";
 import InputFooter from "./InputFooter/InputFooter";
 import { FaInstagram, FaTwitter } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -9,12 +10,12 @@ const Footer = () => {
       <div className="flex flex-col items-center">
         <img src={SaturnLogo} alt="Saturn logo" className="w-28 mb-5 invert" />
 
-        <a href="#" className="hover:text-sky-500">
+        <Link to={"/"} className="hover:text-sky-500">
           Início
-        </a>
-        <a href="#" className="hover:text-sky-500">
+        </Link>
+        <Link to={"/sobre"} className="hover:text-sky-500">
           Sobre nós
-        </a>
+        </Link>
       </div>
 
       <div className="text-center">
@@ -25,36 +26,36 @@ const Footer = () => {
       <div className="flex flex-col items-center">
         <div className="flex flex-col items-center mb-5">
           <h1 className="mb-3">Termos</h1>
-          <a href="#" className="hover:text-sky-500">
+          <Link href="#" className="hover:text-sky-500">
             Política de Privacidade
-          </a>
-          <a href="#" className="hover:text-sky-500">
+          </Link>
+          <Link href="#" className="hover:text-sky-500">
             Termos de Política
-          </a>
+          </Link>
         </div>
 
         <div>
           <div className="flex justify-center gap-2">
-            <a
-              href="https://www.instagram.com/saturnsonline/"
+            <Link
+              to={"https://www.instagram.com/saturnsonline/"}
               target="_blank"
               aria-label="Instagram da loja Saturn"
             >
               <FaInstagram className="text-lg hover:text-sky-500 transition duration-500 m-2" />
-            </a>
-            <a href="#" aria-label="Twitter da loja Saturn">
+            </Link>
+            <Link href="#" aria-label="Twitter da loja Saturn">
               <FaTwitter className="text-lg hover:text-sky-500 transition duration-500 m-2" />
-            </a>
+            </Link>
           </div>
           <p className="m-2">
             By{" "}
-            <a
-              href="https://www.instagram.com/th_ntc"
+            <Link
+              to={"https://www.instagram.com/th_ntc"}
               target="_blank"
               className="hover:text-sky-500"
             >
               Thgx$
-            </a>
+            </Link>
           </p>
         </div>
       </div>
